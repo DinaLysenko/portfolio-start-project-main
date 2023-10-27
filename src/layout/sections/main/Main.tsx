@@ -9,7 +9,7 @@ export const Main = () => {
             <FlexWrapper align={'center'} justify={'space-around'}>
                 <div>
                     <span>Hi There</span>
-                    <h2>I am Svetlana Dyablo</h2>
+                    <h2>I am Dina Lysenko</h2>
                     <h1>A Web Developer. </h1>
                 </div>
                 <Photo src={photo} alt=""/>
@@ -18,7 +18,7 @@ export const Main = () => {
     );
 };
 
-const StyledMain = styled.div`
+const StyledMain = styled.section`
   min-height: 100vh;
   background-color: rgba(201, 74, 231, 0.42);
 `
