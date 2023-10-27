@@ -7,7 +7,7 @@ export const Footer = () => {
     return (
         <StyledFooter>
             <FlexWrapper direction={'column'} align={'center'}>
-                <Name>Svetlana</Name>
+                <Name>Dina</Name>
                 <SocialList>
                     <SocialItem>
                         <SocialLink>
@@ -30,7 +30,7 @@ export const Footer = () => {
                         </SocialLink>
                     </SocialItem>
                 </SocialList>
-                <Copyright>© 2023 Svetlana Dyablo, All Rights Reserved.</Copyright>
+                <Copyright>© 2023 Dina Lysenko, All Rights Reserved.</Copyright>
             </FlexWrapper>
         </StyledFooter>
     );
