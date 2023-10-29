@@ -21,6 +21,9 @@ export const GlodalStyled = createGlobalStyle`
     line-height: 1.2;
   }
   
+  section {
+    padding: 100px 0;
+  }
   section:nth-child(even) {
     background-color: ${theme.color.primaryBg};
   }
