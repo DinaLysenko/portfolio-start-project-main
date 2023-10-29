@@ -78,7 +78,9 @@ const ListItem = styled.li`
 
     ${Mask} {
       transform: skewX(12deg) translateX(5px);
-      color: ${theme.color.font} & +${Mask} {
+      color: ${theme.color.font};
+      
+      & +${Mask} {
         transform: skewX(12deg) translateX(-5px);
       }
     }

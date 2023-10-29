@@ -18,6 +18,7 @@ export const GlodalStyled = createGlobalStyle`
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     color: ${theme.color.font};
+    line-height: 1.2;
   }
   
   section:nth-child(even) {
