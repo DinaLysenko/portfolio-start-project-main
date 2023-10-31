@@ -36,7 +36,7 @@ const IconWrapper=styled.div`
     transform: rotate(-45deg) translate(-50%, -50%);
     background-color: #FFFFFF1A;
     position: absolute;
-top: 50%;
+    top: 50%;
     left: 50%;
     transform-origin: top left;
   }
@@ -45,15 +45,10 @@ top: 50%;
 
 const SkillTitle = styled.h3`
   margin: 70px 0 15px;
-  font-family: Josefin Sans, sans-serif;
-  font-size: 16px;
-  font-weight: 700;
-  letter-spacing: 1px;
   text-transform: uppercase;
 `
 const SkillText = styled.p`
   text-align: center;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1.4;
+  
+  
 `
