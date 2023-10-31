@@ -26,7 +26,7 @@ const StyledSkill = styled.div`
   width: 30%;
   margin-bottom: 70px;
 `
-const IconWrapper=styled.div`
+export const IconWrapper=styled.div`
   position: relative;
 
   &::before {

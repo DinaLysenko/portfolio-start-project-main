@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from "styled-components";
 import {FlexWrapper} from "../FlexWrapper";
+import {Icon} from "../icon/Icon";
+
 
 export const Slider = () => {
     return (
@@ -13,17 +15,17 @@ export const Slider = () => {
                     <Name>@ivan ivanow</Name>
                 </Slide>
             </FlexWrapper>
-            <Pagination>
-                <span> </span>
-                <span> </span>
-                <span> </span>
-            </Pagination>
+            <Icon iconId={'pagination'}/>
+            {/*<Pagination>*/}
+            {/*    <span> </span>*/}
+            {/*    <span> </span>*/}
+            {/*    <span> </span>*/}
+            {/*</Pagination>*/}
         </StyledSlider>
     );
 };
 
 const StyledSlider = styled.div`
-  border: 1px solid lawngreen;
   max-width: 500px;
   display: flex;
   flex-direction: column;
@@ -37,14 +39,20 @@ const Text = styled.p`
 
 `
 const Name = styled.span`
-
+  display: inline-block;
+  margin: 22px 0 42px;
+  font-family: Josefin San, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 `
-const Pagination = styled.div`
-  span {
-    display: inline-block;
-    height: 10px;
-    width: 10px;
-    background-color: #701c9a;
-    margin: 5px;
-  }
-`
+// const Pagination = styled.div`
+  //span {
+  //  display: inline-block;
+  //  height: 10px;
+  //  width: 10px;
+  //  background-color: #701c9a;
+  //  margin: 5px;
+  //}
+// `
