@@ -93,16 +93,6 @@
     </g>
 
     <!--    buttons-->
-    <g id="menuBtn">
-        <circle id="Ellipse 1" cx="100" r="100" fill="#1F1F20" fill-opacity="0.9"/>
-        <g id="menu-icon">
-            <g id="Group">
-                <path id="Vector"
-                      d="M51.32 50H74V47.7778H51.32V50ZM38 41.1111H74V38.8889H38V41.1111ZM38 32.2222H74V30H38V32.2222Z"
-                      fill="white"/>
-            </g>
-        </g>
-    </g>
 
     <g id="btnGoTop">
         <g id="btn-go-top" clip-path="url(#clip0_20_2005)">
