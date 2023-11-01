@@ -42,7 +42,6 @@ export const GlodalStyled = createGlobalStyle`
     line-height: 1.4;
     font-size: 14px;
     font-weight: 400;
-
   }
 
   h3 {
