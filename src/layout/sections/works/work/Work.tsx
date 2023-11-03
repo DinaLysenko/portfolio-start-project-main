@@ -27,9 +27,13 @@ export const Work = (props: WorkPropsType) => {
 };
 
 const StyledWork = styled.div`
-  max-width: 540px;
-  width: 100%;
+  width: 330px;
   background-color: ${theme.color.secondary};
+  flex-grow: 1;
+
+$media ${theme.media.deskTop} {
+  max-width: 540px;
+ }
 `
 const ImageWrapper=styled.div`
   position: relative;
@@ -42,16 +46,36 @@ const ImageWrapper=styled.div`
     transform: translate(-50%, -50%);
   }
 
+  &::before {
+    content: '';
+    position: absolute;
+    background: rgba(0, 0, 0, 0.30);
+    backdrop-filter: blur(4px);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    opacity: 0;
+  }
+
   &:hover {
     &::before {
-      content: '';
-      position: absolute;
-      background: rgba(0, 0, 0, 0.30);
-      backdrop-filter: blur(4px);
-      left: 0;
-      right: 0;
-      bottom: 0;
-      top: 0;
+      opacity: 1;
+    }
+
+    ${Button} {
+      opacity: 1;
+
+      &::before {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+  @media ${theme.media.tablet} {
+    &::before {
+      opacity: 1;
     }
 
     ${Button} {

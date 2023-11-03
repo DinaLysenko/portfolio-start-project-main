@@ -13,7 +13,7 @@ export const Works = () => {
     return (
         <StyledWorks>
             <Container>
-                <SectionTitle>Works</SectionTitle>
+                <SectionTitle>My Works</SectionTitle>
                 <TabMenu menuItems={worksItem}/>
                 <FlexWrapper wrap={'wrap'} justify={'space-between'} align={'flex-start'}>
                     <Work src={socialWork}
@@ -30,4 +30,7 @@ export const Works = () => {
 
 const StyledWorks = styled.section`
 
+  ${FlexWrapper} {
+    gap: 30px;
+  }
 `
