@@ -79,7 +79,7 @@ const SmallText = styled.span`
  
 `
 const Name = styled.h2`
-  ${font({family: 'Josefin Sans, sans-serif', Fmax: 50, Fmin: 36, weight: 700})}
+  ${font({family: '"Josefin Sans", sans-serif', Fmax: 50, Fmin: 36, weight: 700})}
   letter-spacing: 0.05em;
   margin: 10px 0;
   
