@@ -25,6 +25,10 @@ const StyledMenu = styled.nav`
     gap: 30px;
     justify-content: center;
   }
+  
+  @media ${theme.media.tablet} {
+    display: none;
+  }
 `
 
 const Link = styled.a`
@@ -51,7 +55,7 @@ const Mask = styled.span`
       transform: translateY(-50%);
     }
   }
-  
+
 `
 
 const ListItem = styled.li`
@@ -79,8 +83,8 @@ const ListItem = styled.li`
     ${Mask} {
       transform: skewX(12deg) translateX(5px);
       color: ${theme.color.font};
-      
-      & +${Mask} {
+
+      & + ${Mask} {
         transform: skewX(12deg) translateX(-5px);
       }
     }
