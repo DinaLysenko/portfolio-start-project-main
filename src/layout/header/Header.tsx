@@ -5,6 +5,7 @@ import {Container} from "../../components/Container";
 import {FlexWrapper} from "../../components/FlexWrapper";
 import {HeaderMenu} from "./headerMenu/HeaderMenu";
 import {MobileMenu} from "./mobileMenu/ModileMenu";
+import {theme} from "../../styles/Theme";
 
 const items = ['Home', 'Skills', 'Works', 'Testimony', 'Contact']
 export const Header = () => {
@@ -29,5 +30,9 @@ const StyledHeader = styled.header`
   left: 0;
   right: 0;
   z-index: 9999;
+  
+  @media ${theme.media.mobile} {
+  padding: 20px 0 10px;
+}
 `
 

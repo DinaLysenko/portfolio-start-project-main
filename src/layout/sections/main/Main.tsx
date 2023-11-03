@@ -72,6 +72,10 @@ const Photo = styled.img`
 const SmallText = styled.span`
   font-size: 14px;
   font-weight: 400;
+  
+  @media ${theme.media.mobile}{
+    margin-top: 30px;
+  }
  
 `
 const Name = styled.h2`
