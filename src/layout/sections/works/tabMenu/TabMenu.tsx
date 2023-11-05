@@ -4,13 +4,13 @@ import {Link} from "../../../../components/Link";
 
 
 
-export const TabMenu = (props: { menuItems: string[] }) => {
+export const TabMenu:React.FC<{ menuItems: string[] }> = (props: { menuItems: string[] }) => {
     return (
         <StyledMenu>
             <ul>
                 {props.menuItems.map((item, index) => {
-                    return <ListItem key={index}>
-                        <Link href="#">{item}</Link></ListItem>
+                    return <li key={index}>
+                        <Link href="#">{item}</Link></li>
                 })}
             </ul>
         </StyledMenu>
@@ -23,11 +23,9 @@ const StyledMenu = styled.nav`
     justify-content: space-between;
     max-width: 352px;
     width: 100%;
-    margin: 0 auto 40px;
+    margin: 0 auto 46px;
   }
 `
-const ListItem=styled.li`
-  
-`
+
 
 

@@ -4,13 +4,14 @@ import {SectionTitle} from "../../../components/SectionTitle";
 import {Button} from "../../../components/Button";
 import {Container} from "../../../components/Container";
 import {FlexWrapper} from "../../../components/FlexWrapper";
+import {theme} from "../../../styles/Theme";
 
-export const Slogan = () => {
+export const Slogan:React.FC = () => {
     return (
         <StyledSlogan>
             <Container>
                 <FlexWrapper direction={'column'} align={'center'}>
-                    <SectionTitle>I Am Available For Freelance</SectionTitle>
+                    <SectionTitle> <span>I Am Available For</span> Freelance</SectionTitle>
                     <Button>Hire me</Button>
                 </FlexWrapper>
             </Container>
@@ -19,5 +20,14 @@ export const Slogan = () => {
 };
 
 const StyledSlogan = styled.section`
- 
+  @media ${theme.media.mobile} {
+    ${SectionTitle} {
+      line-height: 28px;
+    }
+
+    span {
+      white-space: nowrap;
+    }
+   
+  }
 `
